@@ -5,7 +5,7 @@
 module.exports = {
   mount: {
     /* ... */
-    'src/css': '/css',
+    'css': '/css',
     '_site': '/',
   },
   plugins: [
