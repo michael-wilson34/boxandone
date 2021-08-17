@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Box and One!</title>
-        <link rel="stylesheet" type="text/css" href="/css/style.css" />
-</head>
-<body class="bg-red-800">
-  
+{% extends "layouts/base.njk" %} {% block content %}
 <!-- This example requires Tailwind CSS v2.0+ -->
 <div class="bg-gray-900">
   <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
@@ -52,12 +45,7 @@
   </div>
 </div>
 <article>
-  <h1>Box and One!</h1>
-  <h1>Box And One</h1>
-<h2>It's the place to be</h2>
-<h3>I made a change, what are you going to do about it?</h3>
-
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
 </article>
-
-</body>
-</html>
+{% endblock %}
